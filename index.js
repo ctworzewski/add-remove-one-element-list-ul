@@ -14,7 +14,8 @@ document.body.style.backgroundColor = 'lightblue';
 
 
 const showList = function () {
-    const name = ul.appendChild(li); // przypisuję do zmiennej name - do mojego pobranej listy ul, przypisuję metodę appendChild, której przekazuje parametr li
+    const name = ul.appendChild(li); // przypisuję do zmiennej name - do mojego pobranej listy ul, przypisuję metodę appendChild, 
+                                    // której przekazuje parametr li
     name.innerHTML = 'Cezary'; // do mojej zmiennej wprowadzam wartość
 }
 
@@ -25,4 +26,5 @@ const removeList = function () {
 
 // nasłuchuje na przycisk - czekam aż użytkownik naciśnie go jeden raz i wywołuję funkcje showList()
 btn.addEventListener('click', showList);
-btn.addEventListener('dblclick', removeList); // nasłuchuje na przycisk - czekam aż użytkownik naciśnie dwa razy raz i wywołuję funkcje removeList()
+// nasłuchuje na przycisk - czekam aż użytkownik naciśnie dwa razy raz i wywołuję funkcje removeList()
+btn.addEventListener('dblclick', removeList); 
